@@ -20,7 +20,7 @@ class CalculatorParamTest {
         int result = calculator.multiply(number, 2);
         assertEquals(0, result % 2);
         // Est ce que on test bien tous les cas de figures et que le comportement attendu fonctionne ? 
-        // On test bien que le nombre sera paire (% 2 => modulo 2 => result % 2 == 0 => le reste de la division euclidienne de 
+        // On test bien que le nombre sera pair (% 2 => modulo 2 => result % 2 == 0 => le reste de la division euclidienne de 
         // result par  = 0 => nombre pair)
     }
 

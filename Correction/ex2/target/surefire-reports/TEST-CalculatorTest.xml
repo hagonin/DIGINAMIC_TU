@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="CalculatorTest" time="0.025" tests="14" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="CalculatorTest" time="0.026" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\rddin\AppData\Local\Temp\surefire14727743518412499894\surefirebooter-20251002124713188_3.jar C:\Users\rddin\AppData\Local\Temp\surefire14727743518412499894 2025-10-02T12-47-13_075-jvmRun1 surefire-20251002124713188_1tmp surefire_0-20251002124713188_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\rddin\AppData\Local\Temp\surefire8554255355414705667\surefirebooter-20251002125209982_3.jar C:\Users\rddin\AppData\Local\Temp\surefire8554255355414705667 2025-10-02T12-52-09_863-jvmRun1 surefire-20251002125209982_1tmp surefire_0-20251002125209982_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\rddin\Desktop\DIGINAMIC_TU\Correction\ex2\target\test-classes;C:\Users\rddin\Desktop\DIGINAMIC_TU\Correction\ex2\target\classes;C:\Users\rddin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\rddin\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\rddin\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\rddin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\rddin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\rddin\AppData\Local\Temp\surefire14727743518412499894\surefirebooter-20251002124713188_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\rddin\AppData\Local\Temp\surefire8554255355414705667\surefirebooter-20251002125209982_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="power_returnsOne_whenExponentIsZero" classname="CalculatorTest" time="0.002">
+  <testcase name="power_returnsOne_whenExponentIsZero" classname="CalculatorTest" time="0.003">
     <system-out><![CDATA[=== Début de la campagne de tests ===
 Initialisation d’un nouveau Calculator...
 Fin du test en cours.
@@ -74,17 +74,17 @@ Fin du test en cours.
 Fin du test en cours.
 ]]></system-out>
   </testcase>
-  <testcase name="add_returnsSum_whenAddingNegativeAndPositive" classname="CalculatorTest" time="0.001">
+  <testcase name="add_returnsSum_whenAddingNegativeAndPositive" classname="CalculatorTest" time="0.0">
     <system-out><![CDATA[Initialisation d’un nouveau Calculator...
 Fin du test en cours.
 ]]></system-out>
   </testcase>
-  <testcase name="power_returnsPositive_whenNegativeBaseAndEvenExponent" classname="CalculatorTest" time="0.001">
+  <testcase name="power_returnsPositive_whenNegativeBaseAndEvenExponent" classname="CalculatorTest" time="0.0">
     <system-out><![CDATA[Initialisation d’un nouveau Calculator...
 Fin du test en cours.
 ]]></system-out>
   </testcase>
-  <testcase name="subtract_returnsZero_whenOperandsAreEqual" classname="CalculatorTest" time="0.002">
+  <testcase name="subtract_returnsZero_whenOperandsAreEqual" classname="CalculatorTest" time="0.0">
     <system-out><![CDATA[Initialisation d’un nouveau Calculator...
 Fin du test en cours.
 ]]></system-out>
@@ -94,7 +94,7 @@ Fin du test en cours.
 Fin du test en cours.
 ]]></system-out>
   </testcase>
-  <testcase name="divide_returnsQuotient_whenDividingTwoPositiveNumbers" classname="CalculatorTest" time="0.001">
+  <testcase name="divide_returnsQuotient_whenDividingTwoPositiveNumbers" classname="CalculatorTest" time="0.003">
     <system-out><![CDATA[Initialisation d’un nouveau Calculator...
 Fin du test en cours.
 ]]></system-out>
@@ -119,7 +119,7 @@ Fin du test en cours.
 Fin du test en cours.
 ]]></system-out>
   </testcase>
-  <testcase name="multiply_returnsZero_whenOneOperandIsZero" classname="CalculatorTest" time="0.001">
+  <testcase name="multiply_returnsZero_whenOneOperandIsZero" classname="CalculatorTest" time="0.002">
     <system-out><![CDATA[Initialisation d’un nouveau Calculator...
 Fin du test en cours.
 ]]></system-out>
