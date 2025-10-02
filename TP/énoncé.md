@@ -5,7 +5,7 @@ Durée estimée : 2h à 2h30
 Vous devez développer une mini application Java simplifiée pour gérer une bibliothèque en ligne.
 L’objectif est d’implémenter des classes et d’écrire une suite complète de tests avec JUnit, Mockito et JaCoCo.
 
-# Étape 1 – Implémentation de base (30 min)
+# Étape 1 – Implémentation de base (30 min) -> Partie de la base envoyée
 
 - Créer une classe Book avec les attributs suivants :
 
@@ -34,7 +34,7 @@ Utiliser plusieurs assertions JUnit (assertEquals, assertTrue, assertThrows, ass
 
 # Étape 3 – Tests paramétrés (20 min)
 
-- Mettre en place un test paramétré pour la méthode countAvailableBooks.
+- Mettre en place un test paramétré pour la méthode countAvailableBooks. (CSV)
 - Prévoir plusieurs scénarios avec un nombre de livres ajoutés et empruntés.
 - Vérifier que le résultat correspond bien au nombre attendu de livres disponibles.
 
@@ -46,7 +46,7 @@ Utiliser plusieurs assertions JUnit (assertEquals, assertTrue, assertThrows, ass
 isBookAvailable : retourne vrai ou faux selon le titre
 fetchBookDetails : retourne un objet Book si trouvé, sinon null
 
-- Modifier la classe Library pour qu’elle utilise ce service externe.
+- Modifier la classe Library pour qu’elle utilise ce service externe. (même chose que dans l'exercice / donné)
 - Ajouter une méthode checkExternalAvailability qui appelle isBookAvailable.
 - Ajouter une méthode importBookFromExternal qui appelle fetchBookDetails, ajoute le livre si trouvé, sinon lève une exception.
 
