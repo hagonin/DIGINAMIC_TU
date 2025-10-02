@@ -26,6 +26,13 @@ Vous allez maintenant organiser et améliorer vos tests pour qu’ils soient plu
 Vérifiez et tentez de comprendre l'approche *Given / When / Then*
 Les tests ont surement déjà cette approche, si ce n'est pas le cas mettez la en place sur **2 tests existants**
 
+// Given
+le code correspondant
+// When
+le code correspondant
+// Then 
+le code correspondant
+
 Exemple sur l’addition :  
 
     @Test
