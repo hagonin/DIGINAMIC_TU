@@ -8,10 +8,10 @@ public class User {
     }
 
     public int getAge() {
-        if (age < 0) {
+        if(this.age < 0) {
             throw new IllegalArgumentException("Age cannot be negative");
         }
-        return age;
+        return this.age;
     }
 
     public void setAge(int age) {

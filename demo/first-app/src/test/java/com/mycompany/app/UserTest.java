@@ -1,27 +1,56 @@
 package com.mycompany.app;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 
-public class UserTest {
+import org.junit.jupiter.params.*;
 
-    public User myUser = new User();
+class UserTest {
 
-    @BeforeEach 
-    // Tout ce qui va se passer avant chaque test
+    private User user;
 
-    // Tous mes tests 
-    // 2 cas de figure : un cas classique et un cas "limite"
-
-    // Doit retourner 0 comme age par défault
-    @Test
-    public void shouldReturnDefaultAge() {
-        int result = myUser.getAge();
-        assertEquals(0,result);
+    @BeforeEach
+    void setUp() {
+        // Given : un nouvel utilisateur
+        user = new User();
     }
 
-    // public ... 
-     assertThrows(MonException.class, () => {
-        // ma fonction à tester qui provoque MonException
-     })
-    // }
+    @AfterEach
+    void tearDown() {
+        // nettoyage éventuel
+        user = null;
+    }
+
+    @Test
+    void getAge_returnsZero_whenUserIsNew() {
+        // When
+        int result = user.getAge();
+
+        // Then
+        Assertions.assertEquals(0, result);
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {1, 10, 25})
+    void getAge_returnsSetValue_whenAgeIsPositive(int input) {
+        // Given
+        user.setAge(input);
+
+        // When
+        int result = user.getAge();
+
+        // Then
+        Assertions.assertEquals(input, result);
+    }
+
+    @Test
+    void getAge_throwsException_whenAgeIsNegative() {
+        // Given
+        user.setAge(-5);
+
+        // When + Then
+        Assertions.assertThrows(IllegalArgumentException.class, () -> user.getAge());
+    }
 }
